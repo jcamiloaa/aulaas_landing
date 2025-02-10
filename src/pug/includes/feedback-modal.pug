@@ -1,0 +1,34 @@
+// Feedback Modal
+#feedbackModal.modal.fade(tabindex='-1', aria-labelledby='feedbackModalLabel', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header.bg-gradient-primary-to-secondary.p-4
+                h5#feedbackModalLabel.modal-title.text-white Contáctanos
+                button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.border-0.p-4
+                form#contactForm
+                    .form-floating.mb-3
+                        input#name.form-control(type='text', placeholder='Ingresa tu nombre...', required)
+                        label(for='name') Nombre completo
+                    .form-floating.mb-3
+                        input#email.form-control(type='email', placeholder='nombre@ejemplo.com', required)
+                        label(for='email') Correo electrónico
+                    .form-floating.mb-3
+                        input#phone.form-control(type='tel', placeholder='(300) 123-4567')
+                        label(for='phone') Número de teléfono
+                    .form-floating.mb-3
+                        textarea#message.form-control(placeholder='Escribe tu mensaje aquí...', style='height: 10rem', required)
+                        label(for='message') Mensaje
+                    .d-grid
+                        button.btn.btn-primary.rounded-pill.py-3(type='submit') Enviar
+
+                // Success message
+                #submitSuccessMessage.d-none
+                    .text-center.mb-3
+                        .fw-bolder ¡Mensaje enviado exitosamente!
+                        | Pronto nos pondremos en contacto contigo.
+                        br
+
+                // Error message
+                #submitErrorMessage.d-none
+                    .text-center.text-danger.mb-3 ¡Error al enviar el mensaje!

@@ -1,0 +1,414 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Aulaas - ¡Aprende, ríe y conecta!
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Google fonts
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
+            .container.px-5
+                a.navbar-brand.fw-bold(href='#page-top')
+                    img(src='assets/img/logo.png', alt='Aulaas Logo', height='30')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menú
+                    i.bi-list
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#intro') Inicio
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#features') Características
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#courses') Cursos
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#pricing') Precios
+                    button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(onclick="window.open('https://wa.me/573227091047', '_blank')")
+                        span.d-flex.align-items-center
+                            i.bi-whatsapp.me-2
+                            span.small Contactar
+
+        // Intro Section (white background)
+        section#intro.bg-white
+            header.masthead
+                .container.px-5
+                    .row.gx-5.align-items-center
+                        .col-lg-6
+                            .mb-5.mb-lg-0.text-center.text-lg-start
+                                // Actualizamos los textos con tono enérgico y humorístico
+                                h1.display-1.lh-1.mb-3 ¡Atrévete a aprender a tu ritmo! 🎉
+                                p.lead.fw-normal.text-muted.mb-5 En Aulaas, la IA se pone en modo fiesta para personalizar cada curso con humor y chispa ¡como en un chat de WhatsApp! 💥
+                                .d-flex.flex-column.flex-lg-row.align-items-center
+                                    // Cambiado para abrir en la misma ventana
+                                    button.btn.btn-primary.rounded-pill.px-4.py-3(onclick="window.location.href='https://aulaas.cloud/'")
+                                        span.d-flex.align-items-center
+                                            i.bi-rocket-takeoff.me-2
+                                            span ¡Inicia la diversión ahora!
+                                p.small.text-muted.mt-3.d-none.d-lg-block
+                                    i.bi-info-circle.me-1
+                                    | ¡Dale play en tu celu y únete a la revolución del aprendizaje con onda!
+                        .col-lg-6.d-none.d-lg-block
+                            // Ajustamos la imagen para que se vea con fondo transparente
+                            .text-center.p-4
+                                img.img-fluid(src='assets/img/app.png', alt='Vista de la App', style='max-width: 60%; height: auto;')
+
+        // First gradient message (icon left)
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.justify-content-center
+                    .col-xl-8
+                        .d-flex.align-items-center.justify-content-center.gap-4
+                            // Actualizamos el mensaje para apegarse a un marketing fresco
+                            .h2.fs-1.text-white.mb-0 ¡Chatea con tu futuro, ríe sin parar y aprende con flow! 😂
+
+        // Features Section (white background)
+        section#features.bg-white
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-8.text-center.mb-5
+                        // Nuevo encabezado que mezcla sabiduría y diversión
+                        h2.display-4.lh-1.mb-4 ¡Somos la mezcla perfecta de sabiduría y diversión! 😎
+                        p.lead.fw-normal.text-muted.mb-5
+                            | Descubre nuestras movidas que transforman el estudio en una experiencia inolvidable.
+
+                .row.gx-5
+                    // Fila 1
+                    .col-md-4.mb-5
+                        // Feature item 1
+                        .text-center
+                            i.bi-bezier.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt IA que te entiende ❤️
+                            p.text-muted.mb-0 Aprende a tu ritmo con nuestra compa IA, siempre lista con un chiste y un dato clave
+
+                    .col-md-4.mb-5
+                        // Feature item 2
+                        .text-center
+                            i.bi-whatsapp.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt WhatsApp Learning 2.0
+                            p.text-muted.mb-0 Chatea, aprende y hasta comparte memes educativos. ¡Sí, es posible! 😎
+
+                    .col-md-4.mb-5
+                        // Feature item 3
+                        .text-center
+                            i.bi-graph-up.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt Avance VIP
+                            p.text-muted.mb-0 Tu progreso se vuelve épico, como el mejor story de Instagram
+
+                .row.gx-5
+                    // Fila 2
+                    .col-md-4.mb-5
+                        // Feature item 4
+                        .text-center
+                            i.bi-person-check.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt Profe a Tu Medida
+                            p.text-muted.mb-0 El profe que te motiva como un coach personal, con todo el flow
+
+                    .col-md-4.mb-5
+                        // Feature item 5
+                        .text-center
+                            i.bi-clock-history.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt Tu Tiempo, Tu Regla
+                            p.text-muted.mb-0 Aprende cuando quieras, sin horarios rígidos y aburridos
+
+                    .col-md-4.mb-5
+                        // Feature item 6
+                        .text-center
+                            i.bi-trophy.icon-feature.text-gradient.d-block.mb-3
+                            h3.font-alt Aprende Jugando
+                            p.text-muted.mb-0 Convierte estudiar en juego donde siempre ganas y te diviertes
+
+        // Second gradient message (icon right)
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.justify-content-center
+                    .col-xl-8
+                        .d-flex.align-items-center.justify-content-center.gap-4
+                            .h2.fs-1.text-white.mb-0 ¡Estudia con estilo, rompe esquemas y ríe mientras aprendes! 😁
+
+        // Courses Section (white background)
+        section#courses.bg-white
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-8.text-center.mb-5
+                        // Encabezado actualizado con frases dinámicas y humorísticas
+                        h2.display-4.lh-1.mb-4 Explora WhatsApp Learning, ¡donde cada curso es una aventura! 📚
+                        p.lead.fw-normal.text-muted.mb-5
+                            | Aprende de forma directa, divertida y sin complicaciones. ¡El cambio está en tus manos y en tus emojis!
+
+                // Categorías de Cursos
+                .row.gx-4
+                    // Para Profesionales
+                    .col-lg-4.mb-4
+                        .card.bg-white.h-100
+                            // Actualizamos header para collapse en móvil
+                            .card-header.bg-primary.text-white.py-3(data-bs-toggle="collapse" data-bs-target="#collapseProfesionales" aria-expanded="false" aria-controls="collapseProfesionales" style="cursor:pointer;")
+                                h4.m-0.text-center
+                                    i.bi-briefcase.me-2
+                                    | Desarrollo Profesional
+                            div.collapse.collapse-lg.show#collapseProfesionales
+                                .card-body
+                                    .list-group.list-group-flush
+                                        each curso in ['¡Inglés WhatsApp: Rompe la entrevista! 🤩', 'CV Brutal con toque IA 💥', 'Excel Explosivo: ¡Boom en números! 📊', 'PowerBI: Datos que te hacen LOL', 'Finanzas: ¡Más plata, más risas! 💸', 'IA: Tu compa del futuro 🤖']
+                                            .list-group-item.d-flex.align-items-center.border-0
+                                                i.bi-check2-circle.text-success.me-2
+                                                = curso
+                                        .list-group-item.d-flex.align-items-center.border-0.text-primary.fst-italic
+                                            i.bi-plus-circle.text-primary.me-2
+                                            | y mucho más...
+
+                    // Para Emprendedores
+                    .col-lg-4.mb-4
+                        .card.bg-white.h-100
+                            .card-header.bg-success.text-white.py-3(data-bs-toggle="collapse" data-bs-target="#collapseEmprendedores" aria-expanded="false" aria-controls="collapseEmprendedores" style="cursor:pointer;")
+                                h4.m-0.text-center
+                                    i.bi-rocket.me-2
+                                    | Emprende y Crea
+                            div.collapse.collapse-lg.show#collapseEmprendedores
+                                .card-body
+                                    .list-group.list-group-flush
+                                        each curso in ['Negocios Increíbles: ¡Hazlo viral! 🚀', 'Podcast Con Estilo (onda WhatsApp) 🎙️', 'Videos que Enamoran: ¡Dale play! 🎥', 'Marketing Digital: ¡Rompe la red! 💻', 'Programación sin límites: Código + Café ☕', 'Diseño Geek: ¡Arte a full Insta! 🎨']
+                                            .list-group-item.d-flex.align-items-center.border-0
+                                                i.bi-check2-circle.text-success.me-2
+                                                = curso
+                                        .list-group-item.d-flex.align-items-center.border-0.text-success.fst-italic
+                                            i.bi-plus-circle.text-success.me-2
+                                            | y mucho más...
+
+                    // Para Estudiantes
+                    .col-lg-4.mb-4
+                        .card.bg-white.h-100
+                            .card-header.bg-info.text-white.py-3(data-bs-toggle="collapse" data-bs-target="#collapseEstudiantes" aria-expanded="false" aria-controls="collapseEstudiantes" style="cursor:pointer;")
+                                h4.m-0.text-center
+                                    i.bi-mortarboard.me-2
+                                    | Zona Estudiantil
+                            div.collapse.collapse-lg.show#collapseEstudiantes
+                                .card-body
+                                    .list-group.list-group-flush
+                                        each curso in ['PreICFES: ¡A darlo todo! 🏃‍♂️', 'Saber 10° y 11°: ¡Examen KO! 🥊', 'Experimentos Científicos: ¡Boom en el lab! 💥', 'Matemáticas: ¡Sorpresas y risas! ➗', 'Lectura Dinámica: ¡Lee y disfruta! 📚', 'Inglés Juvenil: ¡Hablá como en WhatsApp! 🗨️']
+                                            .list-group-item.d-flex.align-items-center.border-0
+                                                i.bi-check2-circle.text-success.me-2
+                                                = curso
+                                        .list-group-item.d-flex.align-items-center.border-0.text-info.fst-italic
+                                            i.bi-plus-circle.text-info.me-2
+                                            | y mucho más...
+
+                // Beneficios Adicionales
+                .row.gx-5.mt-4
+                    .col-md-6.mb-4
+                        .card.bg-gradient-primary-to-secondary.h-100
+                            .card-body.p-4
+                                h4.text-white.mb-3
+                                    i.bi-star.me-2
+                                    | Para Padres
+                                ul.list-unstyled.mb-0
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Control parental y seguimiento
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Checklist de responsabilidades
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Reportes de progreso semanales
+
+                    .col-md-6.mb-4
+                        .card.bg-gradient-primary-to-secondary.h-100
+                            .card-body.p-4
+                                h4.text-white.mb-3
+                                    i.bi-controller.me-2
+                                    | Gamificación
+                                ul.list-unstyled.mb-0
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Sistema de puntos y recompensas
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Misiones diarias personalizadas
+                                    li.mb-2.text-white-50
+                                        i.bi-check2.text-white.me-2
+                                        | Competencias familiares amigables
+
+        // Third gradient message (icon left)
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.justify-content-center
+                    .col-xl-8
+                        .d-flex.align-items-center.justify-content-center.gap-4
+                            .h2.fs-1.text-white.mb-0 ¡Toma las riendas de tu educación, a tu manera! 💡
+
+        // Pricing Section (white background)
+        section#pricing.bg-white
+            .container.px-5
+                .text-center.mb-5
+                    h2.display-4.lh-1.mb-4 Planes con toda la onda: ¡elige el que te haga vibrar! 😎
+                    p.lead.fw-normal.text-muted.mb-5 Elige el plan ideal para empezar a disfrutar de un aprendizaje con sabor a diversión.
+
+                .row.gx-5.justify-content-center
+                    // Free Plan
+                    .col-lg-6.col-xl-5.mb-4
+                        .card.h-100.shadow
+                            .card-body.p-4
+                                .text-center
+                                    h5.fw-bolder Plan Gratis 🤩
+                                    span.display-4.fw-bold $0
+                                    span.text-muted /mes
+                                hr.my-4
+                                ul.list-unstyled.mb-4
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Cursos cortos y sabrosos
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | WhatsApp Learning básico (solo texto)
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | 3 ejercicios prácticos por curso
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Control parental básico
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Acceso a foro comunitario
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | 1 perfil de estudiante
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Reportes mensuales básicos
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Recursos educativos limitados
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Notificaciones básicas
+                                    li.mb-2
+                                        i.bi.bi-x.text-danger.me-2
+                                        | Sin certificados
+                                    li.mb-2
+                                        i.bi.bi-x.text-danger.me-2
+                                        | Sin contenido premium
+                                    li.mb-2
+                                        i.bi.bi-x.text-danger.me-2
+                                        | Sin soporte prioritario
+                                    li.mb-2
+                                        i.bi.bi-x.text-danger.me-2
+                                        | Sin vinculación familiar
+                                    li.mb-2
+                                        i.bi.bi-x.text-danger.me-2
+                                        | Sin acceso a eventos especiales
+                                .d-grid
+                                    // Eliminamos target para que abra en la misma ventana
+                                    a.btn.btn-outline-primary.rounded-pill(href='https://aulaas.cloud') ¡Dale play gratis! 😃
+
+                    // Pro Plan
+                    .col-lg-6.col-xl-5.mb-4
+                        .card.h-100.shadow.border-primary
+                            .card-body.p-4
+                                .text-center
+                                    h5.fw-bolder Plan Pro (¡El toque VIP con toda la onda!) 🚀😎
+                                    span.display-4.fw-bold $29,900
+                                    span.text-muted /mes
+                                hr.my-4
+                                ul.list-unstyled.mb-4
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Acceso ilimitado a cursos con chispa
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | WhatsApp Learning completo (texto, voz, imágenes)
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Ejercicios prácticos ilimitados
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Control parental avanzado
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Comunidad premium con mentores
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Hasta 5 perfiles familiares
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Reportes detallados en tiempo real
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Recursos educativos premium
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Notificaciones personalizadas
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Certificados digitales
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Contenido exclusivo y premium
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Soporte prioritario 24/7
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Vinculación familiar completa
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary.me-2
+                                        | Acceso VIP a eventos especiales
+                                .d-grid
+                                    // Cambiamos para que abra en la misma ventana:
+                                    a.btn.btn-primary.rounded-pill(href='https://aulaas.cloud/pro') ¡Hazte Pro y brilla! ✨
+
+        // Final gradient Footer Icon
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.justify-content-center
+                    .col-xl-8
+                        .d-flex.align-items-center.justify-content-center
+                            img.logo-glow(src='assets/img/preload-logo.png', alt='...', style='height: 5rem')
+
+
+        // Footer
+        footer.bg-black.text-center.py-5
+            .container.px-5
+                .text-white-50.small
+                    .mb-2 &copy; Aulaas 2025. Todos los derechos reservados.
+                    a(href='#!', data-bs-toggle='modal', data-bs-target='#privacyModal') Privacidad
+                    span.mx-1 &middot;
+                    a(href='#!', data-bs-toggle='modal', data-bs-target='#termsModal') Términos
+                    span.mx-1 &middot;
+                    a(href='#!', data-bs-toggle='modal', data-bs-target='#helpModal') Ayuda
+
+        include includes/feedback-modal.pug
+        include includes/footer-modals.pug
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
