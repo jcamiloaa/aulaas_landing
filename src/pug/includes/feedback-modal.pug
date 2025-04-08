@@ -15,20 +15,32 @@
                         label(for='email') Correo electrónico
                     .form-floating.mb-3
                         input#phone.form-control(type='tel', placeholder='(300) 123-4567')
-                        label(for='phone') Número de teléfono
+                        label(for='phone') Número de WhatsApp
+                    .form-floating.mb-3
+                        select#team.form-control(required)
+                            option(value='', selected, disabled) Selecciona tu equipo
+                            option(value='nacional') Atlético Nacional
+                            option(value='millonarios') Millonarios
+                            option(value='america') América de Cali
+                            option(value='junior') Junior de Barranquilla
+                            option(value='medellin') Independiente Medellín
+                            option(value='cali') Deportivo Cali
+                            option(value='santafe') Santa Fe
+                            option(value='otro') Otro equipo
+                        label(for='team') Tu Equipo
                     .form-floating.mb-3
                         textarea#message.form-control(placeholder='Escribe tu mensaje aquí...', style='height: 10rem', required)
-                        label(for='message') Mensaje
+                        label(for='message') Tu mensaje
                     .d-grid
-                        button.btn.btn-primary.rounded-pill.py-3(type='submit') Enviar
+                        button.btn.btn-primary.rounded-pill.py-3(type='submit') Enviar mensaje
 
                 // Success message
                 #submitSuccessMessage.d-none
                     .text-center.mb-3
-                        .fw-bolder ¡Mensaje enviado exitosamente!
-                        | Pronto nos pondremos en contacto contigo.
+                        .fw-bolder ¡Mensaje enviado con éxito! 🎯
+                        | Nuestro equipo se pondrá en contacto contigo pronto.
                         br
 
                 // Error message
                 #submitErrorMessage.d-none
-                    .text-center.text-danger.mb-3 ¡Error al enviar el mensaje!
+                    .text-center.text-danger.mb-3 Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.

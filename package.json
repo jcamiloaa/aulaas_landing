@@ -36,7 +36,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-new-age.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "startbootstrap-new-age": "file:"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
